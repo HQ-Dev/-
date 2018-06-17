@@ -27,7 +27,7 @@ public class Main extends Application {
         stage.show();
         stage.setTitle("Library Assistant Login");
 
-        LibraryAssistantUtil.setStageI con(stage);
+        LibraryAssistantUtil.setStageIcon(stage);
 
         new Thread(() -> {
             ExceptionUtil.init();

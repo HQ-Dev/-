@@ -73,7 +73,7 @@ public class BookAddController implements Initializable {
         Book book = new Book(bookID, bookName, bookAuthor, bookPublisher, Boolean.TRUE);
         boolean result = DataHelper.insertNewBook(book);
         if (result) {
-            AlertMaker.showMaterialDialog(rootPane, mainContainer, new ArrayList<>(), "New book added", bookName + " has been added");
+            AlertMaker.showMaterialDialog(rootPane, mainContainer, new ArrayList<>(), "添加了一本新书噢~~", bookName + " 添加成功！期待你早日看完~");
             clearEntries();
         } else {
             AlertMaker.showMaterialDialog(rootPane, mainContainer, new ArrayList<>(), "Failed to add new book", "Check all the entries and try again");
