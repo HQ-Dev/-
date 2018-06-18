@@ -13,6 +13,10 @@ import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+/**
+ * @author Archy
+ * @date Created at 2018/6/18
+ **/
 public class Main extends Application {
 
     private final static Logger LOGGER = LogManager.getLogger(Main.class.getName());

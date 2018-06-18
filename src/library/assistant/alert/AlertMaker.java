@@ -108,6 +108,14 @@ public class AlertMaker {
         alert.showAndWait();
     }
 
+    /**
+     * 显示提示框
+     * @param root
+     * @param nodeToBeBlurred 指定的节点将被模糊处理
+     * @param controls
+     * @param header
+     * @param body
+     */
     public static void showMaterialDialog(StackPane root, Node nodeToBeBlurred, List<JFXButton> controls, String header, String body) {
         BoxBlur blur = new BoxBlur(3, 3, 3);
         if (controls.isEmpty()) {

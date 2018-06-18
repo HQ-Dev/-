@@ -56,7 +56,7 @@ public class BookAddController implements Initializable {
         String bookPublisher = publisher.getText();
 
         if (bookID.isEmpty() || bookAuthor.isEmpty() || bookName.isEmpty() || bookPublisher.isEmpty()) {
-            AlertMaker.showMaterialDialog(rootPane, mainContainer, new ArrayList<>(), "Insufficient Data", "Please enter data in all fields.");
+            AlertMaker.showMaterialDialog(rootPane, mainContainer, new ArrayList<>(), "信息填写不全", "请在每个栏目框都填写内容。");
             return;
         }
 
